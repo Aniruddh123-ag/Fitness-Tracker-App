@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Your Personal Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">FitTrack</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Fitness Journey</h1>
+                <p>Track your workouts, monitor your progress, and achieve your fitness goals with FitTrack</p>
+                <button class="btn btn-primary">Get Started Free</button>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 400'%3E%3Crect fill='%23f0f0f0' width='200' height='400'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dominant-baseline='middle' font-size='20' fill='%23666'%3EApp Preview%3C/text%3E%3C/svg%3E" alt="App Preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose FitTrack?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Detailed Analytics</h3>
+                    <p>Track calories burned, distance covered, and time spent on each workout with detailed analytics and charts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Smart Timer</h3>
+                    <p>Built-in timer with customizable intervals for workouts, rest periods, and training sessions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Setting</h3>
+                    <p>Set personal fitness goals and track your progress towards achieving them in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Cross-Platform</h3>
+                    <p>Seamlessly sync your data across iOS, Android, and web platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Social Features</h3>
+                    <p>Connect with friends, share achievements, and challenge others to stay motivated.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Achievements</h3>
+                    <p>Unlock badges and achievements as you hit fitness milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">$0<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>✓ Basic workout tracking</li>
+                        <li>✓ Standard analytics</li>
+                        <li>✓ Up to 5 workouts per week</li>
+                        <li>✗ Advanced reports</li>
+                        <li>✗ Coaching features</li>
+                    </ul>
+                    <button class="btn btn-secondary">Start Free</button>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="badge">Popular</div>
+                    <h3>Premium</h3>
+                    <div class="price">$9.99<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>✓ Unlimited workouts</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Personalized recommendations</li>
+                        <li>✓ Custom workout plans</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <button class="btn btn-primary">Upgrade Now</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <div class="price">$19.99<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>✓ Everything in Premium</li>
+                        <li>✓ Personal coaching</li>
+                        <li>✓ Nutrition tracking</li>
+                        <li>✓ API access</li>
+                        <li>✓ 1-on-1 support</li>
+                    </ul>
+                    <button class="btn btn-secondary">Upgrade Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Download FitTrack Today</h2>
+            <p>Available on all major platforms</p>
+            <div class="download-buttons">
+                <button class="btn btn-download ios">
+                    <span>📱</span> Download on App Store
+                </button>
+                <button class="btn btn-download android">
+                    <span>🤖</span> Get on Google Play
+                </button>
+                <button class="btn btn-download web">
+                    <span>🌐</span> Use on Web
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get fitness tips, app updates, and exclusive offers</p>
+            <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>support@fittrack.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Fitness Street, Health City, HC 12345</p>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleContact(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FitTrack</h4>
+                    <p>Your personal fitness companion for achieving your health goals.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitTrack. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
